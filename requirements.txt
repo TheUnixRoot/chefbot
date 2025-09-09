@@ -1,0 +1,12 @@
+# Dependencias del proyecto Kuzco
+
+# Para validación de esquemas JSON
+jsonschema>=4.25.0
+
+# Para embeddings y búsqueda vectorial (usado en crear_indice.py)
+langchain-community
+sentence-transformers
+chromadb
+
+# Dependencias adicionales para manejo de archivos y rutas
+pathlib2; python_version<"3.4"
