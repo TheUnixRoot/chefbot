@@ -1,21 +1,21 @@
 {
-    "titulo": "Salsa Carbonara",
-    "descripcion": "Una receta tradicional y sencilla, llena de sabor a italia. Perfecta para cualquier ocasión.",
-    "tiempo_preparacion": "25 minutos",
-    "dificultad": "Fácil",
-    "ingredientes": [
-      { "nombre": "Guanciale", "cantidad": "500 g" },
-      { "nombre": "Huevo", "cantidad": "2" },
-      { "nombre": "Pecorino", "cantidad": "100 g" },
-      { "nombre": "Sal", "cantidad": "2 g" }
-    ],
-    "pasos": [
-      "En una cazuela, sofríe el guanciale su propia grasa.",
-      "Aparta del fuego",
-      "Añade el huevo y el pecorino. Mezcla hasta integrar.",
-      "Si lo necesitas, añade un poco de agua de la coccion de la pasta para que la salsa no se quede demasiado espesa.",
-      "Añade la sal. Cocina a fuego medio durante 30 minutos.",
-      "Sirve caliente."
-    ],
-    "tags": ["salsa", "carbonara", "tradicional", "italiana", "huevo"]
-  }
+  "titulo": "Salsa Carbonara",
+  "descripcion": "Una receta tradicional y sencilla, llena de sabor a italia. Perfecta para cualquier ocasión.",
+  "tiempo_preparacion": "25 minutos",
+  "dificultad": "Fácil",
+  "ingredientes": [
+    { "nombre": "Guanciale", "cantidad": "500 g" },
+    { "nombre": "Huevo", "cantidad": "2" },
+    { "nombre": "Pecorino", "cantidad": "100 g" },
+    { "nombre": "Sal", "cantidad": "2 g" }
+  ],
+  "pasos": [
+    "En una cazuela, sofríe el guanciale su propia grasa.",
+    "Aparta del fuego",
+    "Añade el huevo y el pecorino. Mezcla hasta integrar.",
+    "Si lo necesitas, añade un poco de agua de la coccion de la pasta para que la salsa no se quede demasiado espesa.",
+    "Añade la sal. Cocina a fuego medio durante 30 minutos.",
+    "Sirve caliente."
+  ],
+  "tags": ["salsa", "carbonara", "tradicional", "italiana", "huevo"]
+}

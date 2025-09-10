@@ -1,20 +1,20 @@
 {
-    "titulo": "Salsa Bolognesa",
-    "descripcion": "Una receta tradicional y sencilla, llena de sabor a italia. Perfecta para cualquier ocasión.",
-    "tiempo_preparacion": "45 minutos",
-    "dificultad": "Fácil",
-    "ingredientes": [
-      { "nombre": "Carne molida", "cantidad": "500 g" },
-      { "nombre": "Cebolla", "cantidad": "1" },
-      { "nombre": "Levadura seca", "cantidad": "7 g" },
-      { "nombre": "Tomate frito", "cantidad": "200 g" },
-      { "nombre": "Aceite de oliva virgen extra", "cantidad": "1 cucharada" }
-    ],
-    "pasos": [
-      "En una cazuela, sofríe la cebolla picada en el aceite de oliva virgen extra.",
-      "Añade el agua tibia y el aceite de oliva virgen extra. Mezcla hasta que se forme una masa suave y elástica.",
-      "Añade el tomate frito y la carne molida. Cocina a fuego medio durante 30 minutos.",
-      "Sirve caliente."
-    ],
-    "tags": ["salsa", "bolognesa", "tradicional", "italiana", "tomate"]
-  }
+  "titulo": "Salsa Bolognesa",
+  "descripcion": "Una receta tradicional y sencilla, llena de sabor a italia. Perfecta para cualquier ocasión.",
+  "tiempo_preparacion": "45 minutos",
+  "dificultad": "Fácil",
+  "ingredientes": [
+    { "nombre": "Carne molida", "cantidad": "500 g" },
+    { "nombre": "Cebolla", "cantidad": "1" },
+    { "nombre": "Levadura seca", "cantidad": "7 g" },
+    { "nombre": "Tomate frito", "cantidad": "200 g" },
+    { "nombre": "Aceite de oliva virgen extra", "cantidad": "1 cucharada" }
+  ],
+  "pasos": [
+    "En una cazuela, sofríe la cebolla picada en el aceite de oliva virgen extra.",
+    "Añade el agua tibia y el aceite de oliva virgen extra. Mezcla hasta que se forme una masa suave y elástica.",
+    "Añade el tomate frito y la carne molida. Cocina a fuego medio durante 30 minutos.",
+    "Sirve caliente."
+  ],
+  "tags": ["salsa", "bolognesa", "tradicional", "italiana", "tomate"]
+}

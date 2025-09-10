@@ -1,24 +1,24 @@
 {
-    "titulo": "Pizza Clásica",
-    "descripcion": "Una receta tradicional y sencilla, llena de sabor a italia. Perfecta para cualquier ocasión.",
-    "tiempo_preparacion": "45 minutos",
-    "dificultad": "Fácil",
-    "ingredientes": [
-      { "nombre": "Harina", "cantidad": "500 g" },
-      { "nombre": "Sal", "cantidad": "8 g" },
-      { "nombre": "Levadura seca", "cantidad": "7 g" },
-      { "nombre": "Agua tibia", "cantidad": "300 ml" },
-      { "nombre": "Aceite de oliva virgen extra", "cantidad": "4 cucharadas" },
-      { "nombre": "Salsa de tomate", "cantidad": "200 g" },
-      { "nombre": "Queso mozzarella", "cantidad": "200 g" }
-    ],
-    "pasos": [
-      "En un bol, mezcla la harina, la sal y la levadura seca.",
-      "Añade el agua tibia y el aceite de oliva virgen extra. Mezcla hasta que se forme una masa suave y elástica.",
-      "Deja reposar la masa en un lugar cálido durante 1 hora, tapada con un paño húmedo.",
-      "En una superficie enharinada, extiende la masa hasta obtener un círculo de 25 cm de diámetro.",
-      "Coloca la salsa de tomate en el centro y espolvorea el queso mozzarella.",
-      "Hornea en el horno precalentado a 200 grados Celsius durante 15-20 minutos, o hasta que el queso se haya derretido y la pizza esté dorada."
-    ],
-    "tags": ["pizza", "clásica", "tradicional", "italiana", "queso"]
-  }
+  "titulo": "Pizza Clásica",
+  "descripcion": "Una receta tradicional y sencilla, llena de sabor a italia. Perfecta para cualquier ocasión.",
+  "tiempo_preparacion": "45 minutos",
+  "dificultad": "Fácil",
+  "ingredientes": [
+    { "nombre": "Harina", "cantidad": "500 g" },
+    { "nombre": "Sal", "cantidad": "8 g" },
+    { "nombre": "Levadura seca", "cantidad": "7 g" },
+    { "nombre": "Agua tibia", "cantidad": "300 ml" },
+    { "nombre": "Aceite de oliva virgen extra", "cantidad": "4 cucharadas" },
+    { "nombre": "Salsa de tomate", "cantidad": "200 g" },
+    { "nombre": "Queso mozzarella", "cantidad": "200 g" }
+  ],
+  "pasos": [
+    "En un bol, mezcla la harina, la sal y la levadura seca.",
+    "Añade el agua tibia y el aceite de oliva virgen extra. Mezcla hasta que se forme una masa suave y elástica.",
+    "Deja reposar la masa en un lugar cálido durante 1 hora, tapada con un paño húmedo.",
+    "En una superficie enharinada, extiende la masa hasta obtener un círculo de 25 cm de diámetro.",
+    "Coloca la salsa de tomate en el centro y espolvorea el queso mozzarella.",
+    "Hornea en el horno precalentado a 200 grados Celsius durante 15-20 minutos, o hasta que el queso se haya derretido y la pizza esté dorada."
+  ],
+  "tags": ["pizza", "clásica", "tradicional", "italiana", "queso"]
+}

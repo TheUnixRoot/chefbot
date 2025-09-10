@@ -10,3 +10,5 @@ chromadb
 
 # Dependencias adicionales para manejo de archivos y rutas
 pathlib2; python_version<"3.4"
+
+streamlit

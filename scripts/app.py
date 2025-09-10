@@ -24,7 +24,7 @@ def load_components():
 # 2. Llama a la función para obtener el retriever
 retriever = load_components()
 
-MODEL_NAME = "phi4-mini:latest"
+MODEL_NAME = "phi3:mini"
 # --- Definición del Prompt ---
 # Este es el cerebro que le dice a Phi-3 cómo comportarse.
 template = """
@@ -40,8 +40,8 @@ PREGUNTA:
 
 INSTRUCCIONES:
 1. Revisa el contexto y encuentra las recetas que mejor respondan a la pregunta.
-2. Si encuentras recetas relevantes, preséntalas de forma clara y apetitosa. Menciona sus títulos.
-3. Si el usuario pide los detalles de una receta específica, proporciona sus ingredientes y pasos.
+2. Si encuentras recetas relevantes, preséntalas de forma clara y apetitosa. Menciona sus títulos y tiempos de preparacion.
+3. Si el usuario pide los detalles de una receta específica, proporciona sus ingredientes y pasos sin resumir.
 4. Si no encuentras ninguna receta en el contexto que responda a la pregunta, di amablemente: "Lo siento, no he encontrado ninguna receta que coincida con tu búsqueda. ¿Quieres intentar con otros ingredientes?". No inventes recetas.
 """
 # MODEL_NAME = "orca-mini"
