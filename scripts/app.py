@@ -16,34 +16,48 @@ DB_PATH = os.path.join(PROJECT_ROOT, "chroma_db")
 @st.cache_resource
 def load_components():
     print("Cargando componentes (esto solo debería aparecer una vez)...")
-    embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
+    embedding_function = SentenceTransformerEmbeddings(model_name="paraphrase-multilingual-MiniLM-L12-V2") # qwen2.5 0.5b
+    # embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2") phi3
     db = Chroma(persist_directory=DB_PATH, embedding_function=embedding_function)
     retriever = db.as_retriever(search_kwargs={"k": 3})
     return retriever
 
 # 2. Llama a la función para obtener el retriever
 retriever = load_components()
-
-MODEL_NAME = "phi3:mini"
-# --- Definición del Prompt ---
-# Este es el cerebro que le dice a Phi-3 cómo comportarse.
-template = """
+MODEL_NAME = "qwen2.5:0.5b-instruct"
+template = """<|im_start|>system
 Eres un asistente de cocina amigable y servicial llamado ChefBot.
-Tu objetivo es ayudar a los usuarios a encontrar recetas de tu base de datos.
-Responde a la pregunta del usuario basándote únicamente en el siguiente contexto:
-
+Tu objetivo es ayudar a los usuarios a encontrar recetas de tu base de datos. Responde de forma concisa y concreta.
+Si no encuentras ninguna receta en el contexto que responda a la pregunta, di amablemente: "Lo siento, no he encontrado ninguna receta que coincida con tu búsqueda. ¿Quieres intentar con otros ingredientes?". No inventes recetas.<|im_end|>
+<|im_start|>user
 CONTEXTO:
 {context}
-
 PREGUNTA:
-{question}
-
-INSTRUCCIONES:
-1. Revisa el contexto y encuentra las recetas que mejor respondan a la pregunta.
-2. Si encuentras recetas relevantes, preséntalas de forma clara y apetitosa. Menciona sus títulos y tiempos de preparacion.
-3. Si el usuario pide los detalles de una receta específica, proporciona sus ingredientes y pasos sin resumir.
-4. Si no encuentras ninguna receta en el contexto que responda a la pregunta, di amablemente: "Lo siento, no he encontrado ninguna receta que coincida con tu búsqueda. ¿Quieres intentar con otros ingredientes?". No inventes recetas.
+{question}<|im_end|>
+<|im_start|>assistant
 """
+
+# MODEL_NAME = "phi3:mini"
+# # --- Definición del Prompt ---
+# # Este es el cerebro que le dice a Phi-3 cómo comportarse.
+# template = """
+# Eres un asistente de cocina amigable y servicial llamado ChefBot.
+# Tu objetivo es ayudar a los usuarios a encontrar recetas de tu base de datos.
+# Responde a la pregunta del usuario basándote únicamente en el siguiente contexto:
+
+# CONTEXTO:
+# {context}
+
+# PREGUNTA:
+# {question}
+
+# INSTRUCCIONES:
+# 1. Revisa el contexto y encuentra las recetas que mejor respondan a la pregunta.
+# 2. Si encuentras recetas relevantes, preséntalas de forma clara. Menciona sus títulos y tiempos de preparacion.
+# 3. Si el usuario pide los detalles de una receta específica, proporciona sus ingredientes y pasos sin resumir ni agregar pasos.
+# 4. Al presentar los detalles utiliza estilo lista para ingredientes y pasos, sin adjetivos adicionales ni desarrollar nuevo texto.
+# 4. Si no encuentras ninguna receta en el contexto que responda a la pregunta, di amablemente: "Lo siento, no he encontrado ninguna receta que coincida con tu búsqueda. ¿Quieres intentar con otros ingredientes?". No inventes recetas.
+# """
 # MODEL_NAME = "orca-mini"
 
 # # REEMPLAZA TU ANTIGUO TEMPLATE POR ESTE:
